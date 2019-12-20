@@ -1,0 +1,52 @@
+http://47.96.53.33/swagger-apiui/skynet-service/department/list
+{"code":200,"resultMessage":"","data":[{"departmentId":98,"departmentName":"华东大区"},{"departmentId":99,"departmentName":"华南大区"},{"departmentId":100,"departmentName":"华北大区"},{"departmentId":308,"departmentName":"华西大区"},{"departmentId":993,"departmentName":"华中大区"}]}
+.http://47.96.53.33/swagger-apiui/skynet-service/department/cityList
+{"code":200,"resultMessage":"","data":[{"cityId":1,"cityName":"上海市"},{"cityId":3,"cityName":"杨浦区"},{"cityId":5,"cityName":"徐汇区"},{"cityId":10,"cityName":"黄浦区"},{"cityId":23,"cityName":"阿坝藏族羌族自治州"},{"cityId":59,"cityName":"常州市"},{"cityId":114,"cityName":"杭州市"},{"cityId":211,"cityName":"澳门特别行政区"},{"cityId":218,"cityName":"南京市"},{"cityId":219,"cityName":"宁波市"},{"cityId":257,"cityName":"苏州市"},{"cityId":305,"cityName":"无锡市"},{"cityId":326,"cityName":"香港特别行政区"},{"cityId":345,"cityName":"扬州市"},{"cityId":2136,"cityName":"汤阴县"},{"cityId":2935,"cityName":"若尔盖县"}]}
+.
+----------------------------------------------------------------------
+Ran 2 tests in 0.154s
+
+OK
+http://47.96.53.33/swagger-apiui/skynet-service/department/list
+{"code":200,"resultMessage":"","data":[{"departmentId":98,"departmentName":"华东大区"},{"departmentId":99,"departmentName":"华南大区"},{"departmentId":100,"departmentName":"华北大区"},{"departmentId":308,"departmentName":"华西大区"},{"departmentId":993,"departmentName":"华中大区"}]}
+.http://47.96.53.33/swagger-apiui/skynet-service/department/cityList
+{"code":800,"resultMessage":"系统异常：Required Integer parameter 'department' is not present"}
+E
+======================================================================
+ERROR: test_cityList (__main__.QA)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\\PycharmProjects\\skynetservicetest\\test_case\\test_qa.py", line 25, in test_cityList
+    self.assertEqual(100, response.json()['error_code'])
+KeyError: 'error_code'
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.081s
+
+FAILED (errors=1)
+http://47.96.53.33/swagger-apiui/skynet-service/department/list
+{"code":200,"resultMessage":"","data":[{"departmentId":98,"departmentName":"华东大区"},{"departmentId":99,"departmentName":"华南大区"},{"departmentId":100,"departmentName":"华北大区"},{"departmentId":308,"departmentName":"华西大区"},{"departmentId":993,"departmentName":"华中大区"}]}
+.http://47.96.53.33/swagger-apiui/skynet-service/department/cityList
+{"code":200,"resultMessage":"","data":[{"cityId":1,"cityName":"上海市"},{"cityId":3,"cityName":"杨浦区"},{"cityId":5,"cityName":"徐汇区"},{"cityId":10,"cityName":"黄浦区"},{"cityId":23,"cityName":"阿坝藏族羌族自治州"},{"cityId":59,"cityName":"常州市"},{"cityId":114,"cityName":"杭州市"},{"cityId":211,"cityName":"澳门特别行政区"},{"cityId":218,"cityName":"南京市"},{"cityId":219,"cityName":"宁波市"},{"cityId":257,"cityName":"苏州市"},{"cityId":305,"cityName":"无锡市"},{"cityId":326,"cityName":"香港特别行政区"},{"cityId":345,"cityName":"扬州市"},{"cityId":2136,"cityName":"汤阴县"},{"cityId":2935,"cityName":"若尔盖县"}]}
+.
+----------------------------------------------------------------------
+Ran 2 tests in 0.180s
+
+OK
+http://47.96.53.33/swagger-apiui/skynet-service/department/list
+{"code":200,"resultMessage":"","data":[{"departmentId":98,"departmentName":"华东大区"},{"departmentId":99,"departmentName":"华南大区"},{"departmentId":100,"departmentName":"华北大区"},{"departmentId":308,"departmentName":"华西大区"},{"departmentId":993,"departmentName":"华中大区"}]}
+.http://47.96.53.33/swagger-apiui/skynet-service/department/cityList
+{"code":800,"resultMessage":"系统异常：Required Integer parameter 'department' is not present"}
+E
+======================================================================
+ERROR: test_cityList (__main__.QA)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\\PycharmProjects\\skynetservicetest\\test_case\\test_qa.py", line 25, in test_cityList
+    self.assertEqual(100, response.json()['error_code'])
+KeyError: 'error_code'
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.071s
+
+FAILED (errors=1)
